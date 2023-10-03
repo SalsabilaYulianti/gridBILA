@@ -1,0 +1,79 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px auto;
+  grid-template-areas:
+    'HEADER HEADER HEADER HEADER'
+    'con1 con1 con1 con1'
+    'lo1 lo2 lo2 lo3'
+    'con2 con2 con2 con2'
+    'img img p p'
+    'sosmed sosmed sosmed sosmed'
+    'footer footer footer footer';
+  padding: 10px;
+
+}
+
+
+.header { grid-area: HEADER;
+          top: 0px;
+          width: 100%;
+          height: 100px;
+          position: fixed;
+          font-size: 30px;
+          text-align: center;
+          padding-top: 10px 0;
+          background-color: blue;
+}
+.content1 { grid-area: con1;
+            margin-top: 40px;
+            height: 60px;
+            font-size: 25px;
+            background-color: cadetblue;
+}
+.lorem1 { grid-area: lo1;
+          font-size: 18px;
+          background-color: azure;
+}
+
+.lorem2 { grid-area: lo2;
+          font-size: 18px;
+          background-color: azure;
+}
+
+.lorem3 { grid-area: lo3;
+          font-size: 18px;
+          background-color: azure;
+}
+
+.content2 { grid-area: con2;
+            height: 60px;
+            font-size: 25px;
+            background-color: cadetblue;
+}
+
+.gambar { grid-area: img;}
+
+.paragraf { grid-area: p;
+            font-size: 18px;
+            background-color: azure;
+}
+
+.sosmed { grid-area: sosmed;
+          font-size: 20px;
+          float: right;
+
+}
+
+.footer { grid-area: footer;
+          width: 100%;
+          background-color: cadetblue;
+          text-align: center;
+          font-size: 25px;
+          height: 50px;
+}
+
